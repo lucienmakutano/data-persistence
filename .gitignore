@@ -1,0 +1,11 @@
+# env
+venv
+
+# env var
+.env
+
+# idea
+.idea
+
+#
+data_app/settings.py
