@@ -9,7 +9,7 @@ app = Flask(__name__)
 api = Api(app)
 
 app.config.from_pyfile('settings.py')
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://bc1b301810a782:a9287c9e@us-cdbr-east-06.cleardb.net/heroku_0691c8fd14cb558'
+app.config['SQLALCHEMY_DATABASE_URI'] = f'{ app.config.get('CLEARDB_DATABASE_URL ) }'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 
