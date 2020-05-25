@@ -12,21 +12,7 @@
 
 ```json
 {
-  "message": "data store populated",
-  "data": [
-    {
-      "id": "user_id",
-      "name": "user's name",
-      "username": "user's username",
-      "email": "user_email"
-    },
-    {
-      "id": "user_id",
-      "name": "user's name",
-      "username": "user's username",
-      "email": "user_email"
-    }
-  ]
+  "message": "data store populated"
 }
 ```
 
@@ -34,15 +20,7 @@
 
 ```json
 {
-  "message": "resource deleted",
-  "deleted user": [
-    {
-      "id": "user_id",
-      "name": "user's name",
-      "username": "user's username",
-      "email": "user_email"
-    }
-  ]
+  "message": "resource deleted"
 }
 ```
 
@@ -50,12 +28,7 @@
 
 ```json
 {
-  "message": "new user created",
-  "created user": {
-    "username": "user's username",
-    "name": "user's name",
-    "email": "user's email"
-  } 
+  "message": "new user created"
 }
 ```
 
@@ -63,3 +36,4 @@
 - username = bc1b301810a782
 - password = a9287c9e
 - host = us-cdbr-east-06.cleardb.net
+- port = 3306
