@@ -1,10 +1,16 @@
 try:
-    from data_app import db
+    from data_app import db, login_manager
+    from flask_login import UserMixin
 except ModuleNotFoundError:
     print("module not found")
 
 
-class Users(db.Model):
+@login_manager.user_loader
+def user_loader(user_id):
+    return Users.query.get(int(user_id))
+
+
+class Users(db.Model, UserMixin):
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
     email = db.Column(db.String(100), nullable=False, unique=True)
     username = db.Column(db.String(50), nullable=False, unique=True)
