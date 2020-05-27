@@ -4,7 +4,7 @@
 
 ### endpoint
 
-`https://data-persistence.heroku.com`
+`https://data-persistence.herokuapp.com`
 
 ### usage
 
